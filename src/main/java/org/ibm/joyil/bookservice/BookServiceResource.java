@@ -29,7 +29,7 @@ public class BookServiceResource {
             response = client.send(req,BodyHandlers.ofString());
             responseJson = response.body();
         }catch(Exception e){
-            responseJson = "{'error', '"+e.getMessage()+"'}";
+            responseJson = "{'error is', '"+e.getMessage()+"'}";
         }
         return responseJson;
     }
